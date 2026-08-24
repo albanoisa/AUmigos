@@ -16,7 +16,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-
 ?>
 
 
@@ -41,3 +40,21 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <li><a href="excluir.php">Excluir Clientes</a></li>
                 <li><a href="visualizar_dados.php">Visualizar dados de Clientes</a></li>
             </ul>
+        </nav>
+        
+        <h3>Filtrar por Cliente</h3>
+        <form method="POST" action="">
+            <label for="usuario">Digite o nome do Cliente:</label>
+            <br> <br>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome do Cliente">
+            <br> <br>
+            <input type="submit" value="Filtrar">
+        </form>
+               <?php while ($usuario = mysqli_fetch_assoc($resultadoUsuarios)) {
+                    $selected = (isset($_POST['usuario']) && $_POST['usuario'] == $usuario['id']) ? 'selected' : '';
+                    echo;
+                }
+                ?>
+        </form>
+  
+    </body>
