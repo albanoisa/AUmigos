@@ -33,16 +33,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main>
         <h2>Pet Shop AUmigos</h2>
         <nav>
-            <ul>
-                <li><a href="cadastro.php">Cadastrar Clientes</a></li>
-                <li><a href="listar.php">Listar Clientes</a></li>
-                <li><a href="editar_excluir.php">Editar Clientes</a></li>
-                <li><a href="excluir.php">Excluir Clientes</a></li>
-                <li><a href="visualizar_dados.php">Visualizar dados de Clientes</a></li>
-            </ul>
+            
+                <a href="cadastro.php">Cadastrar Clientes</a>
+                <a href="listar.php">Listar Clientes</a>
+                <a href="editar_excluir.php">Editar Clientes</a>
+                <br> <br>
+                <a href="excluir.php">Excluir Clientes</a>
+                <a href="visualizar_dados.php">Visualizar dados de Clientes</a>
         </nav>
         
-        <h3>Filtrar por Cliente</h3>
+        <h2>Filtrar por Cliente</h2>
         <form method="POST" action="">
             <label for="usuario">Digite o nome do Cliente:</label>
             <br> <br>
