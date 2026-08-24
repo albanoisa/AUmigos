@@ -20,9 +20,8 @@
         <h2>Pet Shop AUmigos</h2>
         <nav>
             <ul>
-                <li><a href="index.php">Cadastrar Clientes</a></li>
-                <li><a href="create.php">Listar Clientes</a></li>
-                <li><a href="read.php">Editar Clientes</a></li>
-                <li><a href="delete.php">Excluir Clientes</a></li>
-                <li><a href="create.php">Visualizar dados de Clientes</a></li>
+                <li><a href="cadastro.php">Cadastrar Clientes</a></li>
+                <li><a href="listar.php">Listar Clientes</a></li>
+                <li><a href="editar_excluir.php">Editar e excluir Clientes</a></li>
+                <li><a href="visualizar_dados.php">Visualizar dados de Clientes</a></li>
             </ul>
