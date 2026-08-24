@@ -34,27 +34,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h2>Pet Shop AUmigos</h2>
         <nav>
             
-                <a href="cadastro.php">Cadastrar Clientes</a>
-                <a href="listar.php">Listar Clientes</a>
-                <a href="editar_excluir.php">Editar Clientes</a>
+                <a href="cadastro_clientes.php">Cadastrar Clientes</a>
+                <a href="listar_clientes.php">Listar Clientes</a>
+                <a href="editar_clientes.php">Editar Clientes</a>
                 <br> <br>
-                <a href="excluir.php">Excluir Clientes</a>
-                <a href="visualizar_dados.php">Visualizar dados de Clientes</a>
+                <a href="excluir_clientes.php">Excluir Clientes</a>
+                <a href="visualizar_dados_clientes.php">Visualizar dados de Clientes</a>
         </nav>
         
-        <h2>Filtrar por Cliente</h2>
-        <form method="POST" action="">
-            <label for="usuario">Digite o nome do Cliente:</label>
-            <br> <br>
-            <input type="text" name="usuario" id="usuario" placeholder="Nome do Cliente">
-            <br> <br>
-            <input type="submit" value="Filtrar">
-        </form>
-               <?php while ($usuario = mysqli_fetch_assoc($resultadoUsuarios)) {
-                    $selected = (isset($_POST['usuario']) && $_POST['usuario'] == $usuario['id']) ? 'selected' : '';
-                    echo;
-                }
-                ?>
-        </form>
   
     </body>

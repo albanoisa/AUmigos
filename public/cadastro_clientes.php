@@ -42,18 +42,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <main>
-        <h2>Cadastro de Clientes</h2>
+     <h2>Filtrar por Cliente</h2>
         <form method="POST" action="">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <input type="submit" value="Cadastrar">
+            <label for="usuario">Digite o nome do Cliente:</label>
+            <br> <br>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome do Cliente">
+            <br> <br>
+            <input type="submit" value="Filtrar">
         </form>
-        <br>
-        <a href="../index.php">Voltar</a>
+               <?php while ($usuario = mysqli_fetch_assoc($resultadoUsuarios)) {
+                    $selected = (isset($_POST['usuario']) && $_POST['usuario'] == $usuario['id']) ? 'selected' : '';
+                    echo;
+                }
+                ?>
+        </form>
     </main>
 
