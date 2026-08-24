@@ -1,5 +1,20 @@
 <?php
 
+include 'infra/conexao.php';
+$sql = "SELECT * FROM pratos";
+$resultado = mysqli_query($conn, $sql);
+
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario_id = $_POST['usuario'] ?? null;
+
+    if ($usuario_id) {
+        $sql = "SELECT * FROM pratos WHERE id_usuario = $usuario_id";
+        $resultado = mysqli_query($conn, $sql);
+    } else {
+        $sql = "SELECT * FROM pratos";
+        $resultado = mysqli_query($conn, $sql);
+    }
+}
 
 
 ?>
