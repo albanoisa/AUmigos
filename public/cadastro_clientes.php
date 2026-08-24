@@ -1,6 +1,6 @@
 <?php
 
-include '../infra/conexao.php';
+include 'infra/conexao.php';
 if (!isset($conn) || $conn === null) {
     die('Erro ao conectar com o banco de dados.');
 }
@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Editar o cadastro do Cliente</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
