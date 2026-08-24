@@ -22,6 +22,7 @@
             <ul>
                 <li><a href="cadastro.php">Cadastrar Clientes</a></li>
                 <li><a href="listar.php">Listar Clientes</a></li>
-                <li><a href="editar_excluir.php">Editar e excluir Clientes</a></li>
+                <li><a href="editar_excluir.php">Editar Clientes</a></li>
+                <li><a href="excluir.php">Excluir Clientes</a></li>
                 <li><a href="visualizar_dados.php">Visualizar dados de Clientes</a></li>
             </ul>
