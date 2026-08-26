@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="email" name="email" id="email" value="<?php echo htmlspecialchars($cliente['email']); ?>" required>
         <button type="submit">Atualizar Cliente</button>
     </form>
-    <button type="button" onclick="window.location.href='../index.php'">Voltar</button>
+    <button type="button" onclick="window.location.href='index.php'">Voltar</button>
 
         <input type="text" name="categoria" id="categoria" value="<?php echo htmlspecialchars($cliente['categoria']); ?>" required>
         <label for="usuario">Usuário:</label>
@@ -76,10 +76,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             ?>
         </select>
-        <button type="submit">Atualizar Prato</button>
+        <button type="submit">Atualizar Cliente</button>
     </form>
     <button type="button" onclick="window.location.href='../index.php'">Voltar</button>
 
 </body>
-
 </html>

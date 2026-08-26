@@ -18,7 +18,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +40,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <a href="excluir_clientes.php">Excluir Clientes</a>
                 <a href="visualizar_dados_clientes.php">Visualizar dados de Clientes</a>
         </nav>
-        
-  
-    </body>
+    </main>
+</body>
