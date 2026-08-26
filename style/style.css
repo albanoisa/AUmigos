@@ -6,7 +6,6 @@ body {
 }
 
 header {
-    background-color: #d8eef3;
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,8 +20,7 @@ nav {
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid #ccc;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 form {

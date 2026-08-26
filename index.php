@@ -30,6 +30,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body> 
     <main>
+        <br>
         <h2>Pet Shop AUmigos</h2>
         <nav>
             
